@@ -1,0 +1,81 @@
+C:\Users\ugrankar\vimfiles\bundle>dir
+ Volume in drive C is PC COE
+ Volume Serial Number is 8834-0E40
+
+ Directory of C:\Users\ugrankar\vimfiles\bundle
+
+05/06/2017  11:59 PM    <DIR>          .
+05/06/2017  11:59 PM    <DIR>          ..
+05/11/2017  12:24 AM    <DIR>          emmet-vim
+11/27/2016  12:04 AM    <DIR>          lua
+11/27/2016  12:03 AM    <DIR>          monokai
+05/11/2017  12:23 AM    <DIR>          neocomplete.vim
+05/11/2017  12:31 AM    <DIR>          perlomni.vim
+05/11/2017  12:31 AM    <DIR>          syntastic
+11/27/2016  12:03 AM    <DIR>          tomorrow
+05/11/2017  12:31 AM    <DIR>          vim-colors-pencil
+05/11/2017  12:31 AM    <DIR>          vim-colors-solarized
+05/11/2017  12:32 AM    <DIR>          vim-devicons
+05/11/2017  12:32 AM    <DIR>          vim-github-colorscheme
+05/11/2017  12:07 AM    <DIR>          vim-go
+11/15/2016  01:21 AM    <DIR>          vim-lucius
+11/16/2016  02:17 PM    <DIR>          VisIncr
+               0 File(s)              0 bytes
+              16 Dir(s)  33,056,792,576 bytes free
+
+C:\Users\ugrankar\vimfiles\bundle>cd vim-go
+
+C:\Users\ugrankar\vimfiles\bundle\vim-go>git config -l
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+credential.helper=manager
+user.email=pritesh.ugrankar@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/fatih/vim-go
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+C:\Users\ugrankar\vimfiles\bundle\vim-go>rmdir /S .git
+.git, Are you sure (Y/N)? Y
+
+C:\Users\ugrankar\vimfiles\bundle\vim-go>git config -l
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+credential.helper=manager
+user.email=pritesh.ugrankar@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/pritesh-ugrankar/vimfiles.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+C:\Users\ugrankar\vimfiles\bundle\vim-go>
