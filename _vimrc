@@ -181,7 +181,7 @@ colorscheme PaperColor
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "set font
 
-"set guifont=Consolas:h16
+"set guifont=Consolas:h14
 set guifont=DejaVuSansMono\ NF:h14
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Always show statusline
@@ -191,10 +191,12 @@ set laststatus=2
 "NO Power/Air/whateverline here. Just plain simple statusline.
 "set statusline=\ %F\ »\ %h%m%r\ %y%=\ %n\ »\ %-10.(%l,%c%V%)\ →\ %P
 "set statusline=\ %F\ »\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %y%=\ %n\ »\ %-10.(%l,%c%V%)\ →\ %P
+set statusline=\ %F\ ➤\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %y%=\ %n\ »\ %-10.(%l,%c%V%)\ →\ %P
 "set statusline=%f\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %=%(%l,%c%V\ %Y\ %=\ %P%)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Show a → when long lines wrap over
-set showbreak=↪
+"set showbreak=↪
+set showbreak=➤
 "set showbreak=→
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Turn off menu bar
@@ -376,14 +378,16 @@ let g:syntastic_enable_highlighting=1
 let g:syntastic_auto_jump=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_loc_list_height=5
-let g:syntastic_enable_perl_checker=1
 let g:syntastic_perl_lib_path=['C:\strawberry\perl\lib']
 let g:syntastic_perl_checkers=['perl']
+let g:syntastic_enable_perl_checker=1
 let g:syntastic_aggregate_errors=1
 let g:syntastic_id_checkers=1
 let g:syntastic_enable_signs=1
-let g:syntastic_error_symbol="E→"
-let g:syntastic_warning_symbol="W→"
+"let g:syntastic_error_symbol="E→"
+"let g:syntastic_warning_symbol="W→"
+let g:syntastic_error_symbol="E➤"
+let g:syntastic_warning_symbol="W➤"
 let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'pep8']
 "Dont remove the lines below.
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
@@ -451,12 +455,17 @@ let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 let g:neocomplete#sources#omni#input_patterns.perl='\h\w*->\|\h\w*->\h\w*\|\h\w*::\|\h\w*::\h\w*'
-"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Interesting Words
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:interestingWordsGUIColors = ['#8CCBEA', '#A4E57E', '#FFDB72', '#FF7272', '#FFB3FF', '#9999FF']
+let g:interestingWordsRandomiseColors = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Lightline colorscheme 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:lightline = { 'colorscheme': 'PaperColor' }"
+"let g:lightline = { 'colorscheme': 'PaperColor' }"
 
 " }}}
 
