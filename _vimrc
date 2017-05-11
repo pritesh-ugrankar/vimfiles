@@ -195,8 +195,7 @@ set statusline=\ %F\ ➤\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %y%=\ %n\
 "set statusline=%f\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %=%(%l,%c%V\ %Y\ %=\ %P%)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Show a → when long lines wrap over
-"set showbreak=↪
-set showbreak=➤
+set showbreak=↪
 "set showbreak=→
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Turn off menu bar
@@ -457,15 +456,6 @@ let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\
 let g:neocomplete#sources#omni#input_patterns.perl='\h\w*->\|\h\w*->\h\w*\|\h\w*::\|\h\w*::\h\w*'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Interesting Words
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:interestingWordsGUIColors = ['#8CCBEA', '#A4E57E', '#FFDB72', '#FF7272', '#FFB3FF', '#9999FF']
-let g:interestingWordsRandomiseColors = 1
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Lightline colorscheme 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"let g:lightline = { 'colorscheme': 'PaperColor' }"
 
 " }}}
 
