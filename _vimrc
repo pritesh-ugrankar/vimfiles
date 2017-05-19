@@ -387,13 +387,24 @@ let g:syntastic_enable_signs=1
 "let g:syntastic_warning_symbol="W→"
 let g:syntastic_error_symbol="E➤"
 let g:syntastic_warning_symbol="W➤"
-let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'pep8']
+"let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'pep8']
 "Dont remove the lines below.
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:go_list_type = "quickfix"
 "Dont remove the lines above.
 "End of Syntastic Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Vim Jedi
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:jedi#auto_initialization = 1 
+
+let g:jedi#auto_vim_configuration = 1
+
+let g:jedi#popup_select_first = 0
+
+let g:jedi#show_call_signatures = "1"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""Neocomplete Settings 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -443,7 +454,7 @@ let g:neocomplete#enable_auto_select = 1
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " Enable heavy omni completion.
