@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='C:/Users/ugrankar/john_guttag_book_examples'
 let g:netrw_dirhist_2='C:/Users/ugrankar/perlscripts'
 let g:netrw_dirhist_3='C:\Users\ugrankar'
 let g:netrw_dirhist_4='C:/Users/ugrankar/Documents'
 let g:netrw_dirhist_5='C:/Users/ugrankar'
 let g:netrw_dirhist_6='C:/Users/ugrankar/Vim'
+let g:netrw_dirhist_7='C:/Users/ugrankar/john_guttag_book_examples'

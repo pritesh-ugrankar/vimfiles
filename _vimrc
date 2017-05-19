@@ -181,22 +181,21 @@ colorscheme PaperColor
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "set font
 
-"set guifont=Consolas:h14
-set guifont=DejaVuSansMono\ NF:h14
+set guifont=Consolas:h14
+"set guifont=DejaVuSansMono\ NF:h14
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Always show statusline
 set laststatus=2
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "set statusline options
 "NO Power/Air/whateverline here. Just plain simple statusline.
-"set statusline=\ %F\ »\ %h%m%r\ %y%=\ %n\ »\ %-10.(%l,%c%V%)\ →\ %P
-"set statusline=\ %F\ »\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %y%=\ %n\ »\ %-10.(%l,%c%V%)\ →\ %P
-set statusline=\ %F\ ➤\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %y%=\ %n\ »\ %-10.(%l,%c%V%)\ →\ %P
-"set statusline=%f\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %=%(%l,%c%V\ %Y\ %=\ %P%)
+set statusline=\ %F\ »\ %h%m%r\ %y%=\ %n\ »\ %-10.(%l,%c%V%)\ →\ %P
+"set statusline=\ %F\ ➤\ %{WebDevIconsGetFileTypeSymbol()}\ %h%w%m%r\ %y%=\ %n\ »\ %-10.(%l,%c%V%)\ →\ %P
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Show a → when long lines wrap over
-set showbreak=↪
+"set showbreak=↪
 "set showbreak=→
+set showbreak=»
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Turn off menu bar
 set guioptions-=m
@@ -383,11 +382,9 @@ let g:syntastic_enable_perl_checker=1
 let g:syntastic_aggregate_errors=1
 let g:syntastic_id_checkers=1
 let g:syntastic_enable_signs=1
-"let g:syntastic_error_symbol="E→"
-"let g:syntastic_warning_symbol="W→"
-let g:syntastic_error_symbol="E➤"
-let g:syntastic_warning_symbol="W➤"
-"let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'pep8']
+let g:syntastic_error_symbol="E→"
+let g:syntastic_warning_symbol="W→"
+let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'pep8']
 "Dont remove the lines below.
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
@@ -398,18 +395,13 @@ let g:go_list_type = "quickfix"
 "Vim Jedi
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:jedi#auto_initialization = 1 
-
 let g:jedi#auto_vim_configuration = 1
-
 let g:jedi#popup_select_first = 0
-
 let g:jedi#show_call_signatures = "1"
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""Neocomplete Settings 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
- "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+"Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplete.
